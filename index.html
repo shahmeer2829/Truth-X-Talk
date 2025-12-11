@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth X Talk - Global News & Entertainment</title>
+    <meta name="generator" content="Truth X Talk React App" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700;900&family=Oswald:wght@400;700&family=Merriweather:wght@300;400;700&family=Raleway:wght@400;700&family=Roboto:wght@300;400;700&family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              accent: 'var(--color-accent)',
+            },
+            fontFamily: {
+              sans: ['var(--font-body)', 'sans-serif'],
+              heading: ['var(--font-heading)', 'serif'],
+            },
+            animation: {
+              marquee: 'marquee 40s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --color-primary: #ef4444; /* Red-500 default */
+        --color-secondary: #1f2937; /* Gray-800 default */
+        --color-accent: #3b82f6; /* Blue-500 default */
+        --font-body: 'Inter';
+        --font-heading: 'Poppins';
+      }
+      body {
+        background-color: #f3f4f6;
+        color: #111827;
+      }
+      .dark body {
+        background-color: #0f172a;
+        color: #f3f4f6;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+</head>
+  <body>
+    <!-- 
+      Using a unique ID allows this app to be embedded in WordPress pages 
+      or other CMS systems without conflicting with existing #root elements.
+    -->
+    <div id="truth-x-talk-app"></div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/*
+Theme Name: Truth X Talk
+Theme URI: https://truthxtalk.com
+Author: Truth X Talk Team
+Author URI: https://truthxtalk.com
+Description: A modern, animated React-powered theme for Global News & Entertainment.
+Version: 1.0.0
+License: MIT
+Text Domain: truth-x-talk
+*/
+
+/* 
+   This file is required for WordPress to recognize the theme.
+   The actual styling is handled by Tailwind CSS within the React application.
+*/
+body {
+    background-color: #f3f4f6;
+}
